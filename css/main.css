@@ -104,7 +104,9 @@ button {
 .anim-shake {
   animation: shake .5s infinite;
 }
-
+.add{
+  
+}
 
 /*** ANIMATIONS ***/
 

@@ -4,15 +4,18 @@ let soundRain = document.getElementById('soundRain');
 let cloud1 = document.getElementById('cloud1');
 let cloud2 = document.getElementById('cloud2');
 let cloud3 = document.getElementById('cloud3');
-let soundEntry = document.getElementById('sound__entry')
 
 
 //Website loads, music starts, everything comes to places:
+var audio;
 
-window.addEventListener("load", function(){
-  console.log("play")
-  soundEntry.play();
-});
+function initAudioPlayer() {
+    audio = new Audio();
+    audio.src = "sounds/havana.mp3";
+    audio.play();
+}
+
+window.addEventListener("load", initAudioPlayer);
 
 // after 7s:
 

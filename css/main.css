@@ -101,6 +101,9 @@ button {
 .anim-rain {
   animation: shake 0.5s backwards infinite;
 }
+.anim-shake {
+  animation: shake .5s infinite;
+}
 
 
 /*** ANIMATIONS ***/

@@ -50,6 +50,24 @@ button {
 }
 
 
+/*** OVERLAY ***/
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(57,113,133,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+/******/
+
 
 
 .size--normal {
@@ -80,6 +98,12 @@ button {
 .anim-fade-in {
   animation: fade-in 1s ease-in-out forwards;
 }
+.anim-rain {
+  animation: shake 0.5s backwards infinite;
+}
+
+
+/*** ANIMATIONS ***/
 
 @keyframes fade-in {
   from {
@@ -130,24 +154,17 @@ button {
     transform: translate(400px, -200px) scale(1);
   }
 }
-.shake {
-  animation: shake 1s ease-in-out infinite;
-}
 
 @keyframes shake {
-  0% {
-    transform: rotate(-5deg);
-  }
-  25% {
-    transform: rotate(15deg);
-  }
-  50% {
-    transform: rotate(-10deg);
-  }
-  75% {
-    transform: rotate(15deg);
-  }
-  100% {
-    transform: rotate(-5deg);
-  }
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }

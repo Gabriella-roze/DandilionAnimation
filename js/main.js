@@ -16,7 +16,7 @@ window.addEventListener("load", initAudioPlayer);
 // after 5 sec:
 
 setTimeout(function(){
-  entrySound.pause();
+  audio.pause();
 }, 5000);
 
 // when button clicked, clouds stay, starts raining, plays raining sound:

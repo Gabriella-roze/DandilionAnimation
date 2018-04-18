@@ -7,15 +7,13 @@ let soundRain = document.getElementById('soundRain');
 let soundEntry = document.getElementById('sound__entry');
 let soundSun = document.getElementById('soundSun');
 let flower = document.getElementById('flower');
+let sun = document.getElementById('sun');
 let cloud1 = document.getElementById('cloud1');
 let cloud2 = document.getElementById('cloud2');
 let cloud3 = document.getElementById('cloud3');
 
 // GENERAL
 btnStart.style.display = 'initial';
-btnRain.style.display = 'initial';
-btnSun.style.display = 'initial';
-btnAlt.style.display = 'initial';
 
 displayButtons();
 
@@ -95,11 +93,12 @@ function off() {
     document.getElementById("overlay").style.display = "none";
 };
 
-// Sun shine button clicked:
+// SUN SHINE button clicked:
 
 btnSun.addEventListener('click', function(){
   soundSun.play();
   onYellow();
+  sun.classList.add('anim-shine')
   btnSun.style.display = 'none';
   btnAlt.style.display = 'initial';
   flower.src='images/flower3.png';
@@ -109,6 +108,7 @@ btnSun.addEventListener('click', function(){
 function stopYellow() {
   setTimeout(function(){
     offYellow();
+    sun.classList.remove('anim-shine');
   }, 2000)
 }
 function onYellow() {

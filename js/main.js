@@ -1,6 +1,5 @@
 
 //Website loads, music starts, everything comes to places:
-
 var audio;
 
 function initAudioPlayer() {
@@ -8,17 +7,15 @@ function initAudioPlayer() {
     audio.src = "sounds/havana.mp3";
     audio.play();
 }
-window.addEventListener("load", initAudioPlayer);
 
+window.addEventListener("load", initAudioPlayer);
 
 // after 4 sec cloud button wiggles, hover(more clouds come in) and click effects may happen:
 
 // after 5 sec:
-
 setTimeout(function(){
   audio.pause();
-}, 5000);
-
+}, 6900);
 // when button clicked, clouds stay, starts raining, plays raining sound:
 
 //

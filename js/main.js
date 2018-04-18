@@ -1,8 +1,15 @@
-let entrySound = document.getElementById('sound__entry');
 
 //Website loads, music starts, everything comes to places:
 
-entrySound.play();
+var audio;
+
+function initAudioPlayer() {
+    audio = new Audio();
+    audio.src = "sounds/havana.mp3";
+    audio.play();
+}
+window.addEventListener("load", initAudioPlayer);
+
 
 // after 4 sec cloud button wiggles, hover(more clouds come in) and click effects may happen:
 

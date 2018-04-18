@@ -34,20 +34,14 @@ button {
   font-size: 16px;
   color: #397185;
 }
-#btn__rain {
-
+#btn__start:hover {
+  box-shadow: 0px 0px 30px #92FE9D;
 }
 #btn__rain:hover {
   box-shadow: 0px 0px 30px #85FBFD;
 }
-#btn__sun {
-
-}
 #btn__sun:hover {
   box-shadow: 0px 0px 30px #FBFB4D;
-}
-#btn__alt {
-
 }
 #btn__alt:hover {
   box-shadow: 0px 0px 30px #F91E69;

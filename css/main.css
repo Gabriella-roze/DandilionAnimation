@@ -11,6 +11,10 @@ body {
   height: 800px;
   background-image: url(../images/simple-background.jpg);
 }
+.picking__anim {
+  height: 800px;
+  width: 1000px;
+}
 
 
 /*** BUTTONS ***/
@@ -92,7 +96,7 @@ button {
 .cloud__btn:hover {
 
 }
-.cloud--hidden {
+.hide {
   display: none;
 }
 .anim-fade-in {
@@ -105,7 +109,7 @@ button {
   animation: shake .5s infinite;
 }
 .add{
-  
+
 }
 
 /*** ANIMATIONS ***/

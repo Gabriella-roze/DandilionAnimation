@@ -27,6 +27,7 @@ setTimeout(function(){
 
 btnRain.addEventListener('click', function(){
   soundRain.play();
+  btnRain.classList.add("hide");
   cloud1.classList.add("anim-shake");
   cloud2.classList.add("anim-shake");
   cloud3.classList.add("anim-shake");
@@ -45,6 +46,7 @@ function stopAnim(){
     cloud1.classList.remove("anim-shake");
     cloud2.classList.remove("anim-shake");
     cloud3.classList.remove("anim-shake");
+    ;
   }, 3800)
 };
 function on() {
@@ -61,5 +63,5 @@ btnSun.addEventListener('click', function(){
   console.log("soundSun");
   soundSun.play();
   stopSound();
-  on();
+
 });

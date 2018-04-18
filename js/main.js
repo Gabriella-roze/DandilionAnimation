@@ -1,4 +1,4 @@
-
+let btns = document.getElementById('buttons');
 //Website loads, music starts, everything comes to places:
 
 var audio;
@@ -13,11 +13,8 @@ window.addEventListener("load", initAudioPlayer);
 
 // after 4 sec cloud button wiggles, hover(more clouds come in) and click effects may happen:
 
-// after 5 sec:
+// after 5 sec menu appears:
 
-setTimeout(function(){
-  entrySound.pause();
-}, 5000);
 
 // when button clicked, clouds stay, starts raining, plays raining sound:
 

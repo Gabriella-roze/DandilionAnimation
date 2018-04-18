@@ -11,6 +11,22 @@ body {
   height: 800px;
   background-image: url(../images/simple-background.jpg);
 }
+
+
+/*** BUTTONS ***/
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 400px;
+  left: 80px;
+}
+button {
+  padding: 15px 20px;
+  margin: 10px;
+  border-radius: 30px;
+}
 .size--normal {
   margin: 40px;
   max-width: 250px;
@@ -35,6 +51,9 @@ body {
 }
 .cloud--hidden {
   display: none;
+}
+.anim-fade-in {
+  animation: fade-in 1s ease-in-out forwards;
 }
 
 @keyframes fade-in {

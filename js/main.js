@@ -1,10 +1,13 @@
 let btns = document.getElementById('buttons');
 let btnRain = document.getElementById('btn__rain');
+let btnSun = document.getElementById('btn__sun');
 let soundRain = document.getElementById('soundRain');
+let soundEntry = document.getElementById('sound__entry');
+let soundSun = document.getElementById('soundSun');
 let cloud1 = document.getElementById('cloud1');
 let cloud2 = document.getElementById('cloud2');
 let cloud3 = document.getElementById('cloud3');
-let soundEntry = document.getElementById('sound__entry')
+
 
 
 //Website loads, music starts, everything comes to places:
@@ -36,20 +39,27 @@ function stopSound(){
     soundRain.pause();
     off();
   }, 4000);
-}
+};
 function stopAnim(){
   setTimeout(function(){
     cloud1.classList.remove("anim-shake");
     cloud2.classList.remove("anim-shake");
     cloud3.classList.remove("anim-shake");
-  }, 4000)
-}
+  }, 3800)
+};
 function on() {
     document.getElementById("overlay").style.display = "block";
-}
+};
 
 function off() {
     document.getElementById("overlay").style.display = "none";
-}
+};
 
-//
+// Sun shine button clicked:
+
+btnSun.addEventListener('click', function(){
+  console.log("soundSun");
+  soundSun.play();
+  stopSound();
+  on();
+});

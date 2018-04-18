@@ -20,6 +20,9 @@ a {
 .picking__anim {
   height: 800px;
   width: 1000px;
+  background-image: url(../images/spritesheet_picking.png);
+  animation: pickup 1.6s steps(13) reverse backwards;
+
 }
 
 
@@ -224,3 +227,12 @@ button {
   transform: scale3d(1, 1, 1);
   }
   }
+
+
+  /*** NEXT STAGE ANIMATION ***/
+
+@keyframes pickup {
+  to {
+    background-position: 12995px 0px;
+  }
+}

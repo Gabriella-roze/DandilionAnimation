@@ -1,4 +1,4 @@
-
+let btns = document.getElementById('buttons');
 //Website loads, music starts, everything comes to places:
 var audio;
 
@@ -16,6 +16,9 @@ window.addEventListener("load", initAudioPlayer);
 setTimeout(function(){
   audio.pause();
 }, 6900);
+
+
+
 // when button clicked, clouds stay, starts raining, plays raining sound:
 
 //

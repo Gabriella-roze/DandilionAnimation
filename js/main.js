@@ -4,10 +4,14 @@ let entrySound = document.getElementById('sound__entry');
 
 entrySound.play();
 
+// after 4 sec cloud button wiggles, hover(more clouds come in) and click effects may happen:
 
-// website loads, after 3 sec:
-
+// after 5 sec:
 
 setTimeout(function(){
-  entrySound.play();
-}, 4500);
+  entrySound.pause();
+}, 5000);
+
+// when button clicked, clouds stay, starts raining, plays raining sound:
+
+//

@@ -1,4 +1,3 @@
-let btns = document.getElementById('buttons');
 let btnStart = document.getElementById('btn__start');
 let btnRain = document.getElementById('btn__rain');
 let btnSun = document.getElementById('btn__sun');
@@ -11,6 +10,8 @@ let sun = document.getElementById('sun');
 let cloud1 = document.getElementById('cloud1');
 let cloud2 = document.getElementById('cloud2');
 let cloud3 = document.getElementById('cloud3');
+
+
 
 // GENERAL
 btnStart.style.display = 'initial';

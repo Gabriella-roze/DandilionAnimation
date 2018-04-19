@@ -17,14 +17,35 @@ a {
   height: 800px;
   background-image: url(../images/simple-background.jpg);
 }
-.picking__anim {
+#picking__anim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 800px;
   width: 1000px;
   background-image: url(../images/spritesheet_picking.png);
-  animation: pickup 1.6s steps(13) reverse backwards;
+  animation: pickup 2s steps(13) backwards;
+}
+#final-anim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  width: 1000px;
+  background-image: url(../images/spritesheet_blowing.png);
+  animation: final 2s steps(13) backwards;
+}
+.choice {
+  height: 800px;
+  width: 1000px;
+  background-color: #A52A6B;
+}
+#btn__choice {
+  display: none;
+}
+#final {
 
 }
-
 
 /*** BUTTONS ***/
 
@@ -44,6 +65,18 @@ button {
   font-family: sans-serif;
   font-size: 16px;
   color: #397185;
+}
+#final-credits {
+  display: none;
+}
+.finalLink {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 200px 50px;
+  border-radius: 20px;
 }
 #btn__start:hover {
   box-shadow: 0px 0px 30px #92FE9D;
@@ -232,7 +265,19 @@ button {
   /*** NEXT STAGE ANIMATION ***/
 
 @keyframes pickup {
+  from {
+    background-position: 0px 0px;
+  }
   to {
-    background-position: 12995px 0px;
+    background-position: -12995px 0px;
+  }
+}
+
+@keyframes final {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -13006px 0px;
   }
 }
